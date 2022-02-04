@@ -1,0 +1,372 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.general
+{
+    background-color: black;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.general::-webkit-scrollbar
+{
+    display: none;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+}
+
+.header
+{
+    grid-column: 1 / 13;
+    grid-row: 1 / 3;
+    z-index: 10;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 3vw;
+}
+
+.header__logo
+{
+    width: 35vh;
+}
+
+.header__menu
+{
+    font-family: 'Outfit', sans-serif;
+    font-size: 3vh;
+}
+
+.header__menuElements li
+{
+    display: flex;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.5rem;
+}
+
+.header__menuElements li a
+{
+    text-decoration: none;
+    color: rgb(230, 221, 221);
+}
+
+/*.main
+{
+}*/
+
+.main__mainVideo video
+{
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+.footer
+{
+    z-index: 10;
+    grid-column: 1 / 8;
+    grid-row: 11 / 13;   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    bottom: 0;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5vh;
+    padding: 3vh 3vw;
+}
+
+.footer__elements li
+{
+    display: flex;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0.5vw;
+}
+
+.footer__elements li a
+{
+    text-decoration: none;
+    color: rgb(230, 221, 221);
+}
+
+.whiteColor
+{
+    color: rgb(230, 221, 221);
+}
+
+.mainFont
+{
+    font-family: 'Outfit', sans-serif;
+}
+
+.disableText
+{
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/*-----------------------Work only-----------------------*/
+.containerWork
+{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+    width: 100vw;
+    align-content: center;
+    justify-content: center;
+}
+
+.mainWork
+{
+    grid-column: 1 / 13;
+    grid-row: 3 / 11;   
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.mainWork h2
+{
+    font-size: 4vh;
+}
+
+.mainWork__section
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mainWork__iframeContainer
+{
+    grid-column: 2 / 12;
+    grid-row: 4 / 11;   
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.mainWork__responsiveIframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mainWork__article
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-family: 'Outfit', sans-serif;
+    color: rgb(230, 221, 221);
+    margin: 1vh 2vw;
+}
+
+.mainWork__article h2
+{
+    font-size: 3vh;
+}
+
+.mainWork__article h2 a
+{
+    text-decoration: none;
+    color: rgb(230, 221, 221);
+}
+
+/*-----------------------About only-----------------------*/
+.headerAbout
+{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 3vw;
+}
+
+.mainAbout
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.mainAbout__title
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(230, 221, 221);
+}
+
+.mainAbout__title h1
+{
+    font-size: 40vh;
+}
+
+.mainAbout__title h2
+{
+    font-size: 15vh;
+    margin-bottom: 3vw;
+}
+
+.mainAbout__body
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    color: rgb(230, 221, 221);
+    padding: 2vh 3vw;
+
+}
+
+.mainAbout__body h3
+{
+    font-size: 8.5vh;
+
+}
+
+.mainAbout__body p
+{
+    font-size: 5vh;
+}
+
+.fa-angle-down
+{
+    color: rgb(230, 221, 221);
+
+}
+
+/*-----------------------Info only-----------------------*/
+
+.mainInfo
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.mainInfo h2
+{
+    font-family: 'Outfit', sans-serif;
+    font-size: 6vh;
+    margin-bottom: 2.5vh;
+    color: rgb(230, 221, 221);
+}
+
+
+.mainInfo__socialNetwork
+{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10vw 5vw 10vw 10vw;
+}
+
+.mainInfo__socialNetworkIcons
+{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+}
+
+.mainInfo__socialNetworkIcons--row
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.fab
+{
+    margin: 3vh;
+    color: rgb(230, 221, 221);
+    
+}
+
+.far
+{
+    margin: 3vh;
+    color: rgb(230, 221, 221);
+}
+
+.mainInfo__form
+{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10vw 10vw 10vw 5vw;
+    align-items: center;
+    justify-content: start;
+}
+
+.mainInfo__formBody
+{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: 'Outfit', sans-serif;
+    color: rgb(230, 221, 221);
+    font-size: 7vh;
+    width: 30vw;
+    height: 30vh;
+}
+
+.mainInfo__formBody--row
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.mainInfo__formBody--row input
+{
+    width: 48%;
+}
+
+.mainInfo__formBody input
+{
+    font-family: 'Outfit', sans-serif;
+    height: 3vh;
+    margin: 0.7vh 0;
+}
+
+.mainInfo__formBody textarea
+{
+    font-family: 'Outfit', sans-serif;
+    height: 10vh;
+    margin: 0.7vh 0;
+}
+
+

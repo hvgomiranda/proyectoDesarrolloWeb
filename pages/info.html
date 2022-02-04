@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Staatliches&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/24a39fb0b2.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/vnd.microsoft.icon" href="../media/favicon.ico">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dante Perini</title>
+    </head>
+    <body class="general container">
+        <header class="headerWork">
+            <!--Empieza el header con logo y menú-->
+            <a href="../index.html">
+                <img src="../media/logo.png" class="header__logo" alt="logo Dante Perini">
+            </a>
+            <nav class="header__menu">
+                <ul class="header__menuElements">
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="commercial.html">commercial</a></li>
+                    <li><a href="film.html">film</a></li>
+                    <li><a href="#">info</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </nav>
+            <!--Termina el header con logo y menú-->
+        </header>
+
+        <!--Empieza el contenido principal-->
+        <main class="mainInfo">
+            <section class="mainInfo__socialNetwork">
+                <h2>Find me on the network</h2>
+                <div class="mainInfo__socialNetworkIcons">
+                    <div class="mainInfo__socialNetworkIcons--row">
+                        <a href="https://www.instagram.com/danteperini/" target="_blank">
+                            <i class="fab fa-instagram fa-4x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dante-perini-18116111a/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-4x"></i>
+                        </a>
+                    </div>
+                    <div class="mainInfo__socialNetworkIcons--row">
+                        <a href="https://vimeo.com/perinidante" target="_blank">
+                            <i class="fab fa-vimeo-v fa-4x"></i>
+                        </a>
+                        <a href="mailto:correoelectronico@email.com">
+                            <i class="far fa-envelope fa-4x"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="mainInfo__form">
+                <h2>Contact me</h2>
+                <form class="mainInfo__formBody">
+                    <div class="mainInfo__formBody--row">
+                        <input type="text" id="name" placeholder="name" required>
+                        <input type="email" id="email" placeholder="email" required>
+                    </div>            
+                    <input type="text" id="subject" placeholder="subject" required>
+                    <textarea id="message" placeholder="message" required></textarea>
+                    <input  type="submit" value="send">
+                </form>
+            </section>
+        </main>
+        <!--Termina el contenido principal-->        
+    </body>
+</html>
