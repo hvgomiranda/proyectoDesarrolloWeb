@@ -13,27 +13,31 @@
         <title>Dante Perini</title>
     </head>
     <body class="general container">
+        <!--Empieza el header con logo y menú-->
         <header class="header">
-            <!--Empieza el header con logo y menú-->
             <a href="../index.html">
                 <img src="../media/logo.png" class="header__logo" alt="logo Dante Perini">
             </a>
             <nav class="header__menu">
                 <ul class="header__menuElements">
-                    <li><a href="../index.html">home</a></li>
-                    <li><a href="commercial.html">commercial</a></li>
-                    <li><a href="film.html">film</a></li>
-                    <li><a href="#">info</a></li>
-                    <li><a href="about.html">about</a></li>
+                    <li><i class="fa fa-bars"></i>
+                        <ul class="header__menuItems">
+                            <li><a href="../index.html">home</a></li>
+                            <li><a href="commercial.html">commercial</a></li>
+                            <li><a href="film.html">film</a></li>
+                            <li><a href="#">info</a></li>
+                            <li><a href="about.html">about</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
-            <!--Termina el header con logo y menú-->
         </header>
+        <!--Termina el header con logo y menú-->
 
         <!--Empieza el contenido principal-->
         <main class="mainInfo">
             <section class="mainInfo__socialNetwork">
-                <h2>Find me on the network</h2>
+                <h2>find me on the network</h2>
                 <div class="mainInfo__socialNetworkIcons">
                     <div class="mainInfo__socialNetworkIcons--row">
                         <a href="https://www.instagram.com/danteperini/" target="_blank">
@@ -54,7 +58,7 @@
                 </div>
             </section>
             <section class="mainInfo__form">
-                <h2>Contact me</h2>
+                <h2>contact me</h2>
                 <form class="mainInfo__formBody">
                     <div class="mainInfo__formBody--row">
                         <input type="text" id="name" placeholder="name" required>
