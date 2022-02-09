@@ -343,13 +343,12 @@
 
 .mainAbout__title h1
 {
-    font-size: 23vw;
+    font-size: 19vw;
 }
 
 .mainAbout__title h2
 {
-    font-size: 10vw;
-    margin-bottom: 5vw;
+    font-size: 7.5vw;
 }
 
 .mainAbout__body
@@ -370,14 +369,12 @@
 
 .mainAbout__bodyElement h3
 {
-    font-size: 7vw;
-    padding-bottom: 0.5vh;
-
+    font-size: 5.5vw;
 }
 
 .mainAbout__bodyElement p
 {
-    font-size: 2vw;
+    font-size: 1.9vw;
 }
 
 .fa-angle-down
