@@ -10,6 +10,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <script type="text/javascript" src="../js/script.js" defer></script>
         <title>Dante Perini</title>
     </head>
@@ -36,10 +37,10 @@
             <main class="mainWork">
                 <!--Empieza el primer artículo-->
                 <article class="mainWork__article whiteColor mainFont">
-                    <div class="mainWork__iframeContainer iframeContainer--left">
+                    <div class="mainWork__iframeContainer iframeContainer--left wow animate__animated animate__fadeInLeft">
                         <iframe class="mainWork__responsiveIframe" src="https://player.vimeo.com/video/444970888?h=a51752c3d8" frameborder="0" width="1280" height="720" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="mainWork__titleContainer titleContainer--left">
+                    <div class="mainWork__titleContainer titleContainer--left marquee">
                         <h2 class="mainWork__title rotate"><a href="https://vimeo.com/444970888">SOPLO</a></h2>
                     </div>
                     <div class="mainWork__textContainer textContainer--left">
@@ -57,10 +58,10 @@
 
                 <!--Empieza el primer artículo-->
                 <article class="mainWork__article whiteColor mainFont">
-                    <div class="mainWork__iframeContainer iframeContainer--right">
+                    <div class="mainWork__iframeContainer iframeContainer--right wow animate__animated animate__fadeInRight">
                         <iframe class="mainWork__responsiveIframe" src="https://player.vimeo.com/video/444970888?h=a51752c3d8" frameborder="0" width="1280" height="720" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="mainWork__titleContainer titleContainer--right">
+                    <div class="mainWork__titleContainer titleContainer--right marquee">
                         <h2 class="mainWork__title rotate"><a href="https://vimeo.com/444970888">SOPLO</a></h2>
                     </div>
                     <div class="mainWork__textContainer textContainer--right">
@@ -78,10 +79,10 @@
 
                 <!--Empieza el primer artículo-->
                 <article class="mainWork__article whiteColor mainFont">
-                    <div class="mainWork__iframeContainer iframeContainer--left">
+                    <div class="mainWork__iframeContainer iframeContainer--left wow animate__animated animate__fadeInLeft">
                         <iframe class="mainWork__responsiveIframe" src="https://player.vimeo.com/video/444970888?h=a51752c3d8" frameborder="0" width="1280" height="720" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="mainWork__titleContainer titleContainer--left">
+                    <div class="mainWork__titleContainer titleContainer--left marquee">
                         <h2 class="mainWork__title rotate"><a href="https://vimeo.com/444970888">SOPLO</a></h2>
                     </div>
                     <div class="mainWork__textContainer textContainer--left">
@@ -100,7 +101,7 @@
         <!--Termina el contenido principal-->
         
         <!--Empieza el footer con enlaces a correo y redes sociales-->
-        <footer class="footer footer__workPosition">
+        <footer class="footer footer__workPosition wow animate__animated animate__fadeInUp">
             <ul class="footer__elements">
                 <li>
                         <a href="mailto:perinidante@gmail.com">perinidante@gmail.com</a>
@@ -115,6 +116,8 @@
                 </li>
             </ul>
         </footer>
-        <!--Termina el footer con enlaces a correo y redes sociales-->       
+        <!--Termina el footer con enlaces a correo y redes sociales-->
+        <script src="../js/wow.min.js"></script>
+        <script>new WOW().init();</script>     
     </body>
 </html>
