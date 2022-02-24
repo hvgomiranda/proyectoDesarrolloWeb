@@ -1,0 +1,25 @@
+{
+  "name": "proyecto_desarrollo_web",
+  "version": "1.0.0",
+  "description": "Proyecto desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hvgomiranda/proyectoDesarrolloWeb.git"
+  },
+  "author": "Hugo Miranda Campos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hvgomiranda/proyectoDesarrolloWeb/issues"
+  },
+  "homepage": "https://github.com/hvgomiranda/proyectoDesarrolloWeb#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
