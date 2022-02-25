@@ -21,7 +21,7 @@ html
     -ms-overflow-style: none;
     scrollbar-width: none;
 
-    .general::-webkit-scrollbar
+    &::-webkit-scrollbar
     {
         display: none;
     }
@@ -121,7 +121,7 @@ html
     justify-content: space-between;
     align-items: flex-end;
     font-family: $mainFont;
-    font-size: 1rem;
+    font-size: 1.7rem;
     padding: 3vh 3vw;
     
     &__indexPosition
@@ -147,6 +147,13 @@ html
     {
         text-decoration: none;
         color: $mainColor;
+        margin-right: 2vw;
+        opacity: 0.6;
+
+        &:hover
+        {
+            opacity: 1;
+        }
     }
 }
 
@@ -628,14 +635,17 @@ html
 
 .fab
 {
-    margin: 3vh;
     color: $mainColor;
 }
 
 .far
 {
-    margin: 3vh;
     color: $mainColor;
+}
+
+.marginIconsInfo
+{
+    margin: 3vh;
 }
 
 /*-----------------------Media Queries-----------------------*/

@@ -11,7 +11,7 @@ html {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none; }
-  .general .general::-webkit-scrollbar {
+  .general::-webkit-scrollbar {
     display: none; }
 
 .defaultContainer {
@@ -79,7 +79,7 @@ html {
   justify-content: space-between;
   align-items: flex-end;
   font-family: "Outfit", sans-serif;
-  font-size: 1rem;
+  font-size: 1.7rem;
   padding: 3vh 3vw; }
   .footer__indexPosition {
     grid-column: 1 / 13;
@@ -93,7 +93,11 @@ html {
     justify-content: space-between; }
   .footer__elements li a {
     text-decoration: none;
-    color: #e6dddd; }
+    color: #e6dddd;
+    margin-right: 2vw;
+    opacity: 0.6; }
+    .footer__elements li a:hover {
+      opacity: 1; }
 
 .whiteColor {
   color: #e6dddd; }
@@ -426,12 +430,13 @@ html {
       width: 48%; }
 
 .fab {
-  margin: 3vh;
   color: #e6dddd; }
 
 .far {
-  margin: 3vh;
   color: #e6dddd; }
+
+.marginIconsInfo {
+  margin: 3vh; }
 
 /*-----------------------Media Queries-----------------------*/
 @media (max-width: 991px) {
