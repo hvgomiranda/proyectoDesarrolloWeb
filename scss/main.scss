@@ -18,6 +18,7 @@ html
 {
     background-color: black;
     overflow-y: scroll;
+    overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
 
@@ -282,7 +283,7 @@ html
         justify-content: space-between;
         font-family: 'Outfit', sans-serif;
         color: $mainColor;
-        margin: 3.5vh 1vw 1vh 0vw;
+
     }
     
     &__iframeContainer
@@ -316,6 +317,8 @@ html
     { 
         writing-mode: vertical-lr;
         font-size: 11vw;
+        display: flex;
+        white-space: nowrap;
 
         a
         {
@@ -632,7 +635,6 @@ html
 
 }
 
-
 .fab
 {
     color: $mainColor;
@@ -650,6 +652,19 @@ html
 
 /*-----------------------Media Queries-----------------------*/
 
+@media(max-width: 1024px)
+{
+    .header__menu
+    {
+        font-size: 1.4rem;
+    }
+
+    .footer
+    {
+        font-size: 1.4rem;
+    }
+}
+
 @media(max-width: 991px)
 {
     .header__menu
@@ -658,9 +673,7 @@ html
         backdrop-filter: blur(6px);
         font-size: 2rem;
     }
-
 }
-
 
 @media (max-width: 768px) 
 {
@@ -700,7 +713,11 @@ html
             display: inline-flex;
         }
     }
-    
+
+    .footer
+    {
+        justify-content: center;
+    }    
 
     ul.show
     {
@@ -731,6 +748,8 @@ html
             font-size: 7rem;
             display: flex;
             white-space: nowrap;
+            align-items: center;
+            padding-bottom: 3vh;
         }
 
         &__textContainer
@@ -744,7 +763,7 @@ html
         {
             white-space: pre-line;
             line-height: 2vh;
-            font-size: 1.5rem;
+            font-size: 1rem;
         }
     }
 
@@ -859,6 +878,8 @@ html
         -o-transform: rotate(0deg);
     }
 
+    /*-----------------------Info only-----------------------*/
+
     .mainInfo
     {
         flex-flow: column;
@@ -867,7 +888,7 @@ html
 
         h2
         {
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
 
         &__socialNetwork
@@ -900,6 +921,8 @@ html
         margin: 1.5vh;
     }
 
+    /*-----------------------About only-----------------------*/
+
     .mainAbout
     {
         &__title h2
@@ -930,6 +953,8 @@ html
 {
     .header
     {
+        grid-row: 1 / 2;
+
         &__menu
         {
             margin-right: 2vw;
@@ -953,10 +978,6 @@ html
         right: 11vw;
     }
 
-    .footer
-    {
-        justify-content: center;
-    }
 
     .mainAbout
     {
@@ -1049,5 +1070,66 @@ html
     {
         grid-column: 1 / 9;
         grid-row: 8 / 11;
+    }
+
+    .mainInfo
+    {
+        grid-row: 2 / 13;
+        justify-content: space-evenly;
+    
+        h2
+        {
+            font-size: 2.5rem;
+            margin-bottom: 2.5vh;
+        }
+
+        &__formBody
+        {
+            width: 60vw;
+        }
+    }
+}
+
+@media(max-width: 375px)
+{
+    .header__menu
+    {
+        font-size: 1.4rem;
+    }
+
+    .footer
+    {
+        font-size: 1.2rem;
+    }
+
+    .toggler-icon
+    {
+        width: 25px;
+    }
+}
+
+@media(max-width: 320px)
+{
+    .toggler-icon
+    {
+        width: 20px;
+    }
+
+    .footer
+    {
+        font-size: 1rem;
+    }
+
+    .footer__elements li a
+    {
+        margin-right: 1.5vw;  
+    }
+
+    .mainInfo
+    {
+        &__formBody
+        {
+            width: 80vw;
+        }
     }
 }
