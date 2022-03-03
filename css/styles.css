@@ -34,7 +34,7 @@ html {
   .header__logo {
     width: 35vw; }
   .header__menu {
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     font-size: 1.7rem;
     text-align: center; }
   .header__button {
@@ -69,9 +69,9 @@ html {
 .main__mainVideo video {
   z-index: -1;
   position: fixed;
+  top: 0;
   width: 100vw;
-  height: 100vh;
-  top: 0; }
+  height: 100vh; }
 
 .footer {
   z-index: 10;
@@ -199,7 +199,7 @@ html {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     color: #e6dddd; }
   .mainWork__iframeContainer {
     position: relative;
@@ -353,8 +353,8 @@ html {
   .mainAbout__body {
     grid-column: 1 / 13;
     grid-row: 9 / 17;
-    display: flex;
     height: 100%;
+    display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-around;
@@ -409,7 +409,7 @@ html {
   .mainInfo__formBody {
     display: flex;
     flex-flow: column wrap;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     color: #e6dddd;
     font-size: 1rem;
     width: 30vw;
@@ -451,9 +451,12 @@ html {
   .header__menu {
     text-align: center;
     backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.6);
     font-size: 2rem; } }
 
 @media (max-width: 768px) {
+  .header__logo {
+    width: 45vw; }
   .header__menu {
     margin-right: 2vw;
     font-size: 1.8rem; }
@@ -609,7 +612,10 @@ html {
     .header__menuElements li {
       line-height: 1vh; }
     .header__logo {
-      width: 30vh; }
+      width: 40vh; }
+  .main__mainVideo video {
+    left: -75vw;
+    width: 250vw; }
   ul.show {
     top: 6vh;
     right: 11vw; }
@@ -673,6 +679,11 @@ html {
 @media (max-width: 320px) {
   .toggler-icon {
     width: 20px; }
+  .header__logo {
+    width: 33vh; }
+  .main__mainVideo video {
+    left: -100vw;
+    width: 300vw; }
   .footer {
     font-size: 1rem; }
   .footer__elements li a {
