@@ -1301,6 +1301,19 @@ html
     }
 }
 
+@media(max-width: 360px)
+{
+    .toggler-icon
+    {
+        width: 20px;
+    }
+
+    .header__logo
+    {
+        width: 33vh;
+    }
+}
+
 @media(max-width: 320px)
 {
     .mainAbout
@@ -1373,16 +1386,6 @@ html
                 grid-row: 6 / 8;
             }
         }
-    }
-
-    .toggler-icon
-    {
-        width: 20px;
-    }
-
-    .header__logo
-    {
-        width: 33vh;
     }
 
     .footer

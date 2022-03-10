@@ -779,6 +779,12 @@ html {
   .toggler-icon {
     width: 25px; } }
 
+@media (max-width: 360px) {
+  .toggler-icon {
+    width: 20px; }
+  .header__logo {
+    width: 33vh; } }
+
 @media (max-width: 320px) {
   .mainAbout__title h1 {
     font-size: 40vw;
@@ -813,10 +819,6 @@ html {
   .mainAbout__body .bodyElementLeft {
     grid-column: 1 / 9;
     grid-row: 6 / 8; }
-  .toggler-icon {
-    width: 20px; }
-  .header__logo {
-    width: 33vh; }
   .footer {
     font-size: 1rem; }
   .footer__elements li a {
