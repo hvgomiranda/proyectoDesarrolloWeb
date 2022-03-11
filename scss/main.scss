@@ -587,20 +587,22 @@ html
 .fa-angle-down
 {
     color: $mainColor;
+    transition: transform 0.5s;
+    margin-top: 3vh;
 }
 
 .animateBtn
 {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
     /* Legacy vendor prefixes that you probably don't need... */
     /* Safari */
-    -webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(180deg);
     /* Firefox */
-    -moz-transform: rotate(90deg);
+    -moz-transform: rotate(180deg);
     /* IE */
-    -ms-transform: rotate(90deg);
+    -ms-transform: rotate(180deg);
     /* Opera */
-    -o-transform: rotate(90deg);
+    -o-transform: rotate(180deg);
 }
 
 .footer__aboutPosition
@@ -627,7 +629,6 @@ html
         color: $mainColor;
         text-align: center;
     }
-    
     
     &__socialNetwork
     {
