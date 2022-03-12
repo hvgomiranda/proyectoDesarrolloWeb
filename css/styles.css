@@ -548,7 +548,7 @@ html {
 
 @media (max-width: 768px) {
   .header__logo {
-    width: 45vw; }
+    width: 50vw; }
   .header__menu {
     margin-right: 2vw;
     font-size: 1.8rem; }
@@ -706,7 +706,7 @@ html {
     .header__menuElements li {
       line-height: 1vh; }
     .header__logo {
-      width: 40vh; }
+      width: 70vw; }
   ul.show {
     top: 6vh;
     right: 11vw; }
@@ -788,9 +788,7 @@ html {
 
 @media (max-width: 360px) {
   .toggler-icon {
-    width: 20px; }
-  .header__logo {
-    width: 33vh; } }
+    width: 20px; } }
 
 @media (max-width: 320px) {
   .mainAbout__title h1 {
@@ -834,3 +832,7 @@ html {
     font-size: 0.85rem; }
   .mainInfo__formBody {
     width: 80vw; } }
+
+@media (max-width: 300px) {
+  .header__logo {
+    width: 75vw; } }

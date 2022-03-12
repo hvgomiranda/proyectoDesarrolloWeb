@@ -834,7 +834,7 @@ html
     {
         &__logo
         {
-            width: 45vw;
+            width: 50vw;
         }
 
         &__menu
@@ -1135,7 +1135,7 @@ html
     
         &__logo
         {
-            width: 40vh;
+            width: 70vw;
         }
     }
 
@@ -1317,11 +1317,6 @@ html
     {
         width: 20px;
     }
-
-    .header__logo
-    {
-        width: 33vh;
-    }
 }
 
 @media(max-width: 320px)
@@ -1418,6 +1413,17 @@ html
         &__formBody
         {
             width: 80vw;
+        }
+    }
+}
+
+@media(max-width: 300px)
+{
+    .header
+    {
+        &__logo
+        {
+            width: 75vw;
         }
     }
 }
